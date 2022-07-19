@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Tree{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+    <figure>
+    {% for db_u in db_user %}
+        <p>Root: {{db_u.username}}</p>
+        <figcaption>{{db_u.bookname}}</figcaption>
+    {% endfor %}
+        {% autoescape off %}
+            <ul class="tree">
+            {{html}}
+            </ul>
+        {% endautoescape %}
+
+
+    </figure>
+{% endif %}
+
+{% endblock %}

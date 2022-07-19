@@ -1,0 +1,17 @@
+Excel file: /home/iplibrt/b11hfc_starlib_reg_10t_v2.3.0/nodm/ipfpilotAT_200603/units/regt_synopsys/diff_lib.xlsx
+1: .
+Pslow_V145_T150 : ./timing_full/starlib_reg_10t_Pslow_V145_T150.lib
+Pslow_V145_T150 : version/lastversion/output//timing_full/starlib_reg_10t_Pslow_V145_T150.lib
+Pslow_V145_T150 : ./timing_full/nldm_starlib_reg_10t_Pslow_V145_T150.lib
+Pslow_V145_T150 : version/lastversion/output//timing_full/nldm_starlib_reg_10t_Pslow_V145_T150.lib
+Pnom_V150_T027 : ./timing_full/starlib_reg_10t_Pnom_V150_T027.lib
+Pnom_V150_T027 : version/lastversion/output//timing_full/starlib_reg_10t_Pnom_V150_T027.lib
+Pnom_V150_T027 : ./timing_full/nldm_starlib_reg_10t_Pnom_V150_T027.lib
+Pnom_V150_T027 : version/lastversion/output//timing_full/nldm_starlib_reg_10t_Pnom_V150_T027.lib
+Pfast_V160_Tm40 : ./timing_full/starlib_reg_10t_Pfast_V160_Tm40.lib
+Pfast_V160_Tm40 : version/lastversion/output//timing_full/starlib_reg_10t_Pfast_V160_Tm40.lib
+Pfast_V160_Tm40 : ./timing_full/nldm_starlib_reg_10t_Pfast_V160_Tm40.lib
+Pfast_V160_Tm40 : version/lastversion/output//timing_full/nldm_starlib_reg_10t_Pfast_V160_Tm40.lib
+ERROR: Some missing data! Please check the excel file!
+ERROR: Some differences found ! Please check the excel file!
+

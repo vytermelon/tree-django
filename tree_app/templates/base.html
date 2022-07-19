@@ -1,0 +1,31 @@
+{% load static %}
+<html lang="en-US">
+<head>
+	<title>{% block title %}Tree{% endblock %}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'styles1.css' %}" >
+</head>
+
+<nav>
+	<div><button onclick="location.href='{% url 'home' %}'">Home</button></div>
+	<div><button onclick="location.href='{% url 'create' %}'">Create</button></div>
+	{% if user.is_authenticated %}
+		<div><button onclick="location.href='{% url 'logout' %}'">Log out</button></div>
+</nav>
+	{% else %}
+		<div><button onclick="location.href='{% url 'login' %}'">login</button></div>
+		<div><button onclick="location.href='{% url 'signup' %}'">signup</button></div>
+		<p>You are not logged in</p>
+</nav>
+{% endif %}
+<body class="body">
+    {% block content %}
+    {% endblock %}
+</body>
+
+<script src="{% static 'ckeditor/ckeditor.js' %}" ></script>
+<script>
+	CKEDITOR.replace('node_content')
+</script>
+</html>

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+    <!--form method='post'>{% csrf_token %}
+        <label for="u_name">Username : </label>
+        <input type="text" id="u_name" name="u_name" value="{{ user.username }}"><br><br>
+        <label for="b_name">BookName : </label>
+        <input type="text" id="b_name" name="b_name" ><br><br>
+        <label for="node_1">Node 1 : </label>
+        <textarea id="node_1" name="node_1" rows="10" cols="50" placeholder="Max limit: 250 words.">
+        </textarea>
+        <button type="submit" onclick="location.href='{% url 'home' %}'">Save</button>
+    </form>
+    -->
+    <form action="/create/" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Submit</button>
+    </form>
+{% endif %}
+
+{% endblock %}
